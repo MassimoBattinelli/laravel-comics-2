@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.p-relative {
+  position: relative;
+}
+
+header img {
+  height: 80%;
+}
+header nav {
+  overflow: hidden;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  line-height: 5rem;
+  border-bottom: 6px solid transparent;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+header nav ul .active {
+  color: #3880F1;
+  border-bottom: 6px solid #3880F1;
+}
+header .input-sec {
+  border-bottom: 3px solid #3880F1;
+}
+header .input-sec input {
+  border: none;
+  outline: none;
+}
+header .input-sec input::-moz-placeholder {
+  text-align: right;
+  position: relative;
+  bottom: 2px;
+}
+header .input-sec input:-ms-input-placeholder {
+  text-align: right;
+  position: relative;
+  bottom: 2px;
+}
+header .input-sec input::placeholder {
+  text-align: right;
+  position: relative;
+  bottom: 2px;
+}
+
+.banner-header {
+  height: 450px;
+  overflow: hidden;
+}
+.banner-header img {
+  width: 100%;
+}
+
+main {
+  background-color: #1C1C1C;
+}
+main .card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .card-container .card {
+  color: white;
+  width: calc(16.6666666667% - 2rem);
+  margin: 2rem 1rem;
+}
+main .card-container .card .thumb {
+  display: inline-block;
+  height: 160px;
+  overflow: hidden;
+}
+main .card-container .card .thumb img {
+  width: 100%;
+}
+main .card-container .card h5 {
+  margin-top: 1rem;
+}
+
+.sub-menu {
+  background-color: #3880F1;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+.sub-menu .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sub-menu .container div {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.sub-menu img {
+  height: 50px;
+  margin: 0 1rem;
+}
+
+.comic .comic-container {
+  display: flex;
+  align-items: center;
+}
+.comic .comic-container .container-text {
+  margin-right: 3rem;
+}
+.comic .comic-thumb {
+  position: absolute;
+  bottom: 1rem;
+  border: 1px solid white;
+}
+.comic h2 {
+  text-transform: uppercase;
+  margin: 3rem 0 1.5rem 0;
+}
+.comic .shop-sec {
+  color: rgba(255, 255, 255, 0.5);
+  height: 3rem;
+  background-color: #70B864;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.comic .shop-sec .price {
+  padding: 1rem;
+  border-right: 1px solid green;
+  border-bottom: 1px solid green;
+  display: flex;
+  flex-grow: 4;
+  justify-content: space-between;
+}
+.comic .shop-sec .price div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.comic .shop-sec .check-ava {
+  border-bottom: 1px solid green;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.comic .description {
+  margin-bottom: 3rem;
+  line-height: 1.8rem;
+}
+.comic .info {
+  background-color: #f6f6f6;
+  padding-bottom: 3rem;
+}
+.comic .info h3 {
+  margin-top: 1rem;
+}
+.comic .info .info-container {
+  display: flex;
+}
+.comic .info .info-container .talent {
+  width: 50%;
+}
+.comic .info .info-container .talent .list-talents .artists {
+  border-top: 1px solid lightgray;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.comic .info .info-container .talent .list-talents .artists p {
+  margin-top: 1rem;
+}
+.comic .info .info-container .talent .list-talents .artists .list-artist {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.comic .info .info-container .talent .list-talents .writers {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+.comic .info .info-container .talent .list-talents .writers p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.comic .info .info-container .talent .list-talents .writers .list-writers {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.comic .info .info-container .specs {
+  width: 50%;
+  margin-left: 3rem;
+}
+.comic .info .info-container .specs .specs-sec {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgrey;
+}
+.comic .info .info-container .specs .specs-sec:first-of-type {
+  margin-top: 1rem;
+}
+.comic .info .info-container .specs .specs-sec:last-of-type {
+  border-bottom: 1px solid lightgrey;
+}
+.comic .info .info-container .specs p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.banner footer {
+  overflow: hidden;
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner footer .list-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.banner footer .list-container ul {
+  margin-right: 3rem;
+  color: white;
+  list-style: none;
+}
+.banner footer .list-container ul h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+.banner footer .list-container ul li {
+  color: grey;
+}
+
+.base-footer {
+  height: 5rem;
+  background-color: #303030;
+}
+.base-footer button {
+  background: none;
+  color: white;
+  border: 2px solid #3880F1;
+  padding: 0.7rem;
+}
+.base-footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.base-footer .container .socials {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.base-footer .container .socials h3 {
+  color: #3880F1;
+  text-transform: uppercase;
+}
